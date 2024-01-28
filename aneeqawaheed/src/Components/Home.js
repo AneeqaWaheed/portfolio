@@ -27,19 +27,8 @@ const Typewriter = ({ text, delay }) => {
           <div className="col-md-6 d-flex p-3 align-items-center justify-content-center">
             <div>
               <h2 className="h1 fw-bold" style={{ color: 'rgba(30, 30, 30, 0.85)' }}>Welcome to {currentText}</h2>
-              <p className='fw-mediums text-secondary'>I'm Aneeqa Waheed, a dedicated web and app developer with a passion for coding.
-
-As a tech enthusiast, I specialize in a variety of technologies, including:
-
-ReactJS
-NodeJS
-ExpressJS
-MongoDB
-Flutter
-Bootstrap
-Laravel
-and many more.
-
+              <p className='fw-mediums text-secondary'>I'm Aneeqa Waheed, 
+                Here you'll discover a collection of intriguing projects that reflect my dedication to the coding world. Each project is accompanied by snapshots, offering a visual journey through my development process.
 
 
               </p>
