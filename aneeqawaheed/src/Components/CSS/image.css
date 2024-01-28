@@ -1,0 +1,23 @@
+/* Add these styles to your main.css file */
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80%;
+    background: linear-gradient(to top left, transparent 50%, white 50%); /* Diagonal cut effect */
+  }
+  
