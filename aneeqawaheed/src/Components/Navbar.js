@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
     >
       {/* Left side with logo */}
       <div className="navbar-brand" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
-        <img src="./assets/logo.png" alt="Logo" style={{ width: '40px', marginRight: '10px' }} />
+        <img src="./assets/logo.png" alt="Logo" style={{ width: '50px', marginRight: '10px' }} />
         <a className="nav-link fs-3" href="#" style={{ color: '#ffffff' }}>
           Aneeqa Waheed
         </a>
@@ -46,9 +47,9 @@ function Navbar() {
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
           <ul className="navbar-nav ml-auto d-flex justify-content-evenly w-100">
             <li className="nav-item active">
-              <a className="nav-link" href="#" style={{ color: '#ffffff' }}>
-                Home
-              </a>
+            <Link className="nav-link text-white" to="/Home">
+              Home
+            </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" style={{ color: '#ffffff' }}>

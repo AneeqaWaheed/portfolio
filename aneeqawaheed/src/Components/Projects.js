@@ -4,30 +4,55 @@ import projects from '../data/projectData';
 import './CSS/projects.css';
 
 const ProjectModal = ({ show, onHide, project }) => {
-  return (
-    <Modal show={show} onHide={onHide} size="lg">
-      <Modal.Header closeButton>
-        <Modal.Title>{project.name}</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Carousel>
-          {project.images.map((image, index) => (
-            <Carousel.Item key={index}>
-              <img className="d-block w-100" src={image} alt={`Slide ${index + 1}`} />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-        <p>{project.description}</p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={onHide}>
-          Close
-        </Button>
-        {/* Add any additional buttons or actions here */}
-      </Modal.Footer>
-    </Modal>
-  );
-};
+    return (
+      <Modal show={show} onHide={onHide} size="lg" >
+        <Modal.Header closeButton className='bg-dark text-white'>
+          <Modal.Title>{project.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body  style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+          <Carousel >
+            {project.images.map((image, index) => (
+              <Carousel.Item key={index}  >
+                <img className="d-block w-100" src={image} alt={`Slide ${index + 1}`} />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          <div className='my-5'>
+            <div className="d-flex my-3">
+              <h5 className="fw-medium me-4">Project Title: </h5>
+              <p className='m-0 fs-5'>{project.name}</p>
+            </div>
+  
+            <h5 className='fw-medium'>Project Details</h5>
+            <p style={{ fontSize: '14px' }}>{project.description}</p>
+            <div className="d-flex my-3">
+              <h5 className="fw-medium me-4">Category: </h5>
+              <p className='m-0 ' style={{ fontSize: '16px' }}>{project.category}</p>
+            </div>
+            <h5 className='fw-medium'>Technology Used</h5>
+            <p style={{ fontSize: '16px' }}>{project.technology}</p>
+            <h5 className='fw-medium'>GitHub Link</h5>
+            <a className='link-dark' href={project.viewLink} target="_blank" rel="noopener noreferrer">
+              {project.viewLink}
+            </a>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={onHide}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+  
+const truncateDescription = (description, wordCount) => {
+    const words = description.split(' ');
+    if (words.length > wordCount) {
+      return words.slice(0, wordCount).join(' ') + '...';
+    }
+    return description;
+  };
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
@@ -45,18 +70,23 @@ const Projects = () => {
 
   return (
     <>
-      <div className="my-3 p-5">
+    <div className="my-3 p-5 ">
         <h2 className="fw-bold text-center mb-5">Trips Packages </h2>
-        <div className="projects-wrapper">
+        <div className="projects-wrapper ">
           {projects.map((project, index) => (
             <div className="col-md-4" key={project.id}>
               <Card>
                 <Card.Img variant="top" src={project.imageUrl} alt={project.name} />
                 <Card.Body>
                   <Card.Title className="fw-bold text-start">{project.name}</Card.Title>
-                  <Card.Text className="text-start">{project.description}</Card.Text>
+                  <Card.Text className="text-start">
+                    {truncateDescription(project.description, 15)}
+                  </Card.Text>
                   <div className="d-flex flex-lg-row justify-content-between">
-                    <Button variant="primary" onClick={() => handleShowModal(project)}>
+                    <Button variant="outline-dark" style={{
+                        backgroundColor: 'rgba(30, 30, 30, 0.85)',
+                        color: '#ffffff', 
+                    }} onClick={() => handleShowModal(project)}>
                       View Project
                     </Button>
                   </div>
@@ -70,6 +100,7 @@ const Projects = () => {
       {selectedProject && (
         <ProjectModal show={showModal} onHide={handleHideModal} project={selectedProject} />
       )}
+
     </>
   );
 };
