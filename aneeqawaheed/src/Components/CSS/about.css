@@ -7,30 +7,15 @@
     height: 100vh;
   }
   
-  .row {
-    display: flex;
-  }
+ 
   
   .section {
     flex: 1;
-    background-color: #f0f0f0; /* Gray background color */
+    background-color:rgba(30, 30, 30, 0.85); /* Gray background color */
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
   }
-  
-  .section-title {
-    color: #333; /* Text color */
-  }
-  
-  .skills-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skills-section li {
-    margin-bottom: 8px;
-  }
-  
+
   /* Add more styling as needed */
   

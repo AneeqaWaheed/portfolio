@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,22 +16,21 @@ function Navbar() {
         alignItems: 'center',
         justifyContent: 'space-between',
         backgroundColor: 'rgba(30, 30, 30, 0.85)',
-        padding: '20px 80px',
+        padding: '20px 5px',
         boxShadow: '0 5px 15px rgba(0, 0, 0, 0.06)',
         color: '#ffffff',
       }}
     >
-      {/* Left side */}
-      <div className="navbar-brand" style={{ width: '40%' }}>
-      <a className="nav-link fs-3" href="#" style={{ color: '#ffffff' }}>
-                Aneeqa Waheed
-              </a>
+      {/* Left side with logo */}
+      <div className="navbar-brand" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
+        <img src="./assets/logo.png" alt="Logo" style={{ width: '40px', marginRight: '10px' }} />
+        <a className="nav-link fs-3" href="#" style={{ color: '#ffffff' }}>
+          Aneeqa Waheed
+        </a>
       </div>
 
       {/* Right side */}
-      <div style={{ width: '60%',
-     }}
-      >
+      <div style={{ width: '60%' }}>
         <button
           className="navbar-toggler"
           type="button"
@@ -47,7 +44,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
-          <ul className="navbar-nav ml-auto d-flex justify-content-evenly w-100 ">
+          <ul className="navbar-nav ml-auto d-flex justify-content-evenly w-100">
             <li className="nav-item active">
               <a className="nav-link" href="#" style={{ color: '#ffffff' }}>
                 Home
