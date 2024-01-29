@@ -5,7 +5,7 @@ import './CSS/about.css';
 
 const YourComponent = () => {
   return (
-    <div className="container d-flex justify-content-center align-items-center flex-column h-100 my-4">
+    <div id="about-section" className="container d-flex justify-content-center align-items-center flex-column h-100 my-4" >
       <h1 className="text-center ">About</h1>
       <div className="row mt-4">
         {/* Skills Section */}

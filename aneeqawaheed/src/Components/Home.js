@@ -22,7 +22,7 @@ const Typewriter = ({ text, delay }) => {
 
   return (
     <>
-      <div className="container-fluid h-100 d-flex align-items-center justify-content-center mb-5">
+      <div className="container-fluid h-100 d-flex align-items-center justify-content-center mb-5" id='home'>
         <div className="row m-3">
           <div className="col-md-6 d-flex p-3 align-items-center justify-content-center">
             <div>
