@@ -1,0 +1,8 @@
+.projects-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    flex-wrap: nowrap;
+   
+  }
+  
