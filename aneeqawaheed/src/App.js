@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
-import About from './Components/About';
+import ContactForm from './Components/Contact';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
    <BrowserRouter>
    <Routes>
     <Route exact path="/" element={<Main />} />
+    <Route exact path="/contact" element={<ContactForm />} />
     
    </Routes>
    </BrowserRouter>
