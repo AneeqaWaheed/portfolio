@@ -70,7 +70,7 @@ const Projects = () => {
 
   return (
     <>
-    <div className="my-3 p-5 ">
+    <div className="my-3 p-5 " id='project'>
         <h2 className="fw-bold text-center mb-5">Trips Packages </h2>
         <div className="projects-wrapper ">
           {projects.map((project, index) => (

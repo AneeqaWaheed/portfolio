@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -25,9 +25,10 @@ function Navbar() {
       {/* Left side with logo */}
       <div className="navbar-brand" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
         <img src="./assets/logo.png" alt="Logo" style={{ width: '50px', marginRight: '10px' }} />
-        <a className="nav-link fs-3" href="#" style={{ color: '#ffffff' }}>
-          Aneeqa Waheed
-        </a>
+        
+        <Link className="nav-link fs-3 text-white" to="/">
+        Aneeqa Waheed
+        </Link>
       </div>
 
       {/* Right side */}
@@ -47,24 +48,30 @@ function Navbar() {
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
           <ul className="navbar-nav ml-auto d-flex justify-content-evenly w-100">
             <li className="nav-item active">
-            <Link className="nav-link text-white" to="/Home">
-              Home
-            </Link>
+            
+            <AnchorLink  href="#home" offset={() => 10} style={{ textDecoration: 'none' }}>
+                    <button className="nav-link text-white">Home</button>
+                </AnchorLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: '#ffffff' }}>
-                About
-              </a>
+         
+            <AnchorLink  href="#about-section" offset={() => 10} style={{ textDecoration: 'none' }}>
+                    <button className="nav-link text-white">About</button>
+                </AnchorLink>
+              
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: '#ffffff' }}>
-                Projects
-              </a>
+              
+            <AnchorLink href="#project" offset={() => 10} style={{ textDecoration: 'none' }}>
+  <button className="nav-link text-white">Project</button>
+</AnchorLink>
+
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" style={{ color: '#ffffff' }}>
                 Contact
               </a>
+              
             </li>
           </ul>
         </div>
