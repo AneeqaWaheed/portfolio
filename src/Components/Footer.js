@@ -29,6 +29,7 @@ const Footer = () => {
             href={`https://www.linkedin.com/in/aneeqa-waheed-84571823b/`}
             target="_blank"
             className="me-3"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white', fontSize: '24px' }} />
           </a>
@@ -37,6 +38,7 @@ const Footer = () => {
             href={`https://github.com/AneeqaWaheed`}
             target="_blank"
             className="me-3"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} style={{ color: 'white', fontSize: '24px' }} />
           </a>
