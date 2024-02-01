@@ -19,6 +19,16 @@ const projects = [
       images: ['./assets/Kashiftravellers1.png', './assets/Kashiftravellers2.png', './assets/Kashiftravellers3.png','./assets/Kashiftravellers4.png','./assets/Kashiftravellers5.png','./assets/Kashiftravellers6.png','./assets/Kashiftravellers7.png','./assets/Kashiftravellers8.png','./assets/Kashiftravellers9.png','./assets/Kashiftravellers10.png','./assets/Kashiftravellers11.png','./assets/Kashiftravellers12.png','./assets/Kashiftravellers13.png','./assets/Kashiftravellers14.png','./assets/Kashiftravellers15.png','./assets/Kashiftravellers16.png','./assets/Kashiftravellers17.png','./assets/Kashiftravellers19.png','./assets/Kashiftravellers20.png','./assets/Kashiftravellers21.png',],
       viewLink: 'https://github.com/AneeqaWaheed/Kashiftravellers.git',
     },
+    {
+      id: 3,
+      name: 'Portfolio',
+      category: 'web development',
+      technology: 'react',
+      description: 'This is my personal portfolio website. this is to discover a range of my projects. Each project reflects my commitment to quality, creativity, and effective problem-solving.',
+      imageUrl: './assets/portfolio.png',
+      images: ['./assets/portfolio.png', './assets/portfolio2.png',],
+      viewLink: 'https://github.com/AneeqaWaheed/portfolio.git',
+    },
   ];
   
   export default projects;
