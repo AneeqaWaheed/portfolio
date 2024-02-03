@@ -29,6 +29,17 @@ const projects = [
       images: ['./assets/portfolio.png', './assets/portfolio2.png',],
       viewLink: 'https://github.com/AneeqaWaheed/portfolio.git',
     },
+  
+    {
+      id: 4,
+      name: 'TransportHub',
+      category: 'web development',
+      technology: 'react',
+      description: 'Transport Hub is designed with the primary objective of creating a unified and streamlined platform for managing a variety of services, including car rentals, recreational trip packages, goods shipment, and parcel  pickups This is my Final Year Project. I with my two other members are currently working on this project',
+      imageUrl: './assets/transporthub.png',
+      images: ['./assets/transporthub2.png', './assets/transporthub3.png','./assets/transporthub4.png','./assets/transporthub5.png','./assets/transporthub6.png','./assets/transporthub7.png','./assets/transporthub8.png',],
+      viewLink: 'https://github.com/AneeqaWaheed/portfolio.git',
+    },
   ];
   
   export default projects;
