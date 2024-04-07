@@ -8,7 +8,7 @@ function Main() {
   return (
     <div className="landing-page ">
      <Navbar />
-   <Home text="Aneeqa Waheed's Portfolio " delay={100} />
+   <Home text="Aneeqa Portfolio " delay={100} />
    <About />
    <Projects />
    <Footer />
