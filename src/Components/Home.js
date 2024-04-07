@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CSS/main.css';
 import './CSS/image.css';
+import DownlaodPdf from './pdf/pdf';
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +33,14 @@ const Typewriter = ({ text, delay }) => {
 
 
               </p>
+
+              <div className='d-flex flex-row mx-3'>
+              <button type="button" class="btn btn-primary mx-3">Contact me</button>
+      <DownlaodPdf />
+    </div>
+
               
+
             </div>
           </div>
 
