@@ -16,17 +16,17 @@ function Navbar() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        backgroundColor: 'rgba(30, 30, 30, 0.85)',
+        // backgroundColor: 'rgba(30, 30, 30, 0.85)',
         padding: '20px 5px',
         boxShadow: '0 5px 15px rgba(0, 0, 0, 0.06)',
         color: '#ffffff',
       }}
     >
       {/* Left side with logo */}
-      <div className="navbar-brand" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
+      <div className="navbar-brand ms-5" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
         <img src="./assets/logo.png" alt="Logo" style={{ width: '50px', marginRight: '10px' }} />
         
-        <Link className="nav-link fs-3 text-white" to="/">
+        <Link className="nav-link fs-3 text-primary" to="/">
         Aneeqa Waheed
         </Link>
       </div>
@@ -50,26 +50,26 @@ function Navbar() {
             <li className="nav-item active">
             
             <AnchorLink  href="#home" offset={() => 10} style={{ textDecoration: 'none' }}>
-                    <button className="nav-link text-white">Home</button>
+                    <button className="nav-link text-dark">Home</button>
                 </AnchorLink>
             </li>
             <li className="nav-item">
          
             <AnchorLink  href="#about-section" offset={() => 10} style={{ textDecoration: 'none' }}>
-                    <button className="nav-link text-white">About</button>
+                    <button className="nav-link text-dark">About</button>
                 </AnchorLink>
               
             </li>
             <li className="nav-item">
               
             <AnchorLink href="#project" offset={() => 10} style={{ textDecoration: 'none' }}>
-  <button className="nav-link text-white">Project</button>
+  <button className="nav-link text-dark">Project</button>
 </AnchorLink>
 
             </li>
             <li className="nav-item">
              
-              <Link className="nav-link text-white" to="/contact">
+              <Link className="nav-link text-dark" to="/contact">
               Contact
                 </Link>
               
