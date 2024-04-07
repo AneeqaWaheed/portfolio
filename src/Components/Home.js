@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './CSS/main.css';
 import './CSS/image.css';
 import DownlaodPdf from './pdf/pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faGoogle  } from '@fortawesome/free-brands-svg-icons';
+
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,9 +36,27 @@ const Typewriter = ({ text, delay }) => {
 
 
               </p>
+              <div className='my-4'>
+      
+      <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3' >
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3' style={{ color: 'orange' }}>
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a href="https://www.linkedin.com/yourpage" target="_blank" rel="noopener noreferrer"className='fs-1 mx-3'>
+        <FontAwesomeIcon icon={faLinkedin} style={{ color: '#0077b5' }} />
+      </a>
+      <a href="mailto:youremail@gmail.com" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3'>
+        <FontAwesomeIcon icon={faGoogle} style={{ color: '#d93025' }} />
+      </a>
+      <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3'>
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
+    </div>
 
-              <div className='d-flex flex-row mx-3'>
-              <button type="button" class="btn btn-primary mx-3">Contact me</button>
+              <div className='d-flex flex-row me-3'>
+              <a href="/contact" className="btn btn-lg btn-primary mx-3">Contact me</a>
       <DownlaodPdf />
     </div>
 

@@ -15,7 +15,7 @@ const DownlaodPdf = () => {
             <center>
                
                 
-                <button type="button" class="btn btn-primary" onClick={onButtonClick}>See my Resume</button>
+                <button type="button" class="btn btn-lg btn-primary" onClick={onButtonClick}>See my Resume</button>
             </center>
         </>
     );
