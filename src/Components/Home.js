@@ -3,7 +3,7 @@ import './CSS/main.css';
 import './CSS/image.css';
 import DownlaodPdf from './pdf/pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faGoogle  } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faGoogle  } from '@fortawesome/free-brands-svg-icons';
 
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');
@@ -38,16 +38,21 @@ const Typewriter = ({ text, delay }) => {
               </p>
               <div className='my-4'>
       
-      <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3' >
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
+              <a
+            href={`https://github.com/AneeqaWaheed`}
+            target="_blank"
+            
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} className='fs-1 mx-3' style={{ color: 'black' }} />
+          </a>
       <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3' style={{ color: 'orange' }}>
         <FontAwesomeIcon icon={faInstagram} />
       </a>
-      <a href="https://www.linkedin.com/yourpage" target="_blank" rel="noopener noreferrer"className='fs-1 mx-3'>
+      <a href="https://www.linkedin.com/in/aneeqa-waheed-84571823b/" target="_blank" rel="noopener noreferrer"className='fs-1 mx-3'>
         <FontAwesomeIcon icon={faLinkedin} style={{ color: '#0077b5' }} />
       </a>
-      <a href="mailto:youremail@gmail.com" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3'>
+      <a href="mailto:aneeqawaheed19@gmail.com" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3'>
         <FontAwesomeIcon icon={faGoogle} style={{ color: '#d93025' }} />
       </a>
       <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-1 mx-3'>
