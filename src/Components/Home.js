@@ -27,23 +27,27 @@ const Typewriter = ({ text, delay }) => {
         <div className="row m-3">
           <div className="col-md-6 d-flex p-3 align-items-center justify-content-center">
             <div>
-              <h2 className="h1 fw-bold" style={{ color: 'rgba(30, 30, 30, 0.85)' }}>Welcome to {currentText}</h2>
-              <p className='fw-mediums text-secondary'>I'm Aneeqa Waheed, 
+              <h2 className="h1 fw-bold text-primary" style={{ color: 'rgba(30, 30, 30, 0.85)' }}>Welcome to {currentText}</h2>
+              <p className='fw-medium fs-5 text-secondary'>I'm Aneeqa Waheed, 
                 Here you'll discover a collection of intriguing projects that reflect my dedication to the coding world. Each project is accompanied by snapshots, offering a visual journey through my development process.
 
 
               </p>
+
               <div className='d-flex flex-row mx-3'>
               <button type="button" class="btn btn-primary mx-3">Contact me</button>
       <DownlaodPdf />
     </div>
+
+              
+
             </div>
           </div>
 
           <div className="col-md-6 ">
             <div className="image-container">
               <img
-                src="./assets/1.jpg"
+                src="./assets/images.jpg"
                 alt="Right Column"
                 className="img-fluid" // Added class for responsive images
               />
