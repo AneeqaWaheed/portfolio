@@ -29,17 +29,40 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-div">
+   
+
+<div className="vw-100 h-100 d-flex align-items-center justify-content-center mb-5 p-5" id='home'
+style={{backgroundColor:'#0854a6'}}
+>
+<div className="row m-3 w-50">
+  
+  {/* <div className="contact-div"> */}
+  <h2 className="fw-bold fs-1" style={{ color: 'orange' }}>Contact </h2>
+
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+        <label className="text-white">Name</label>
         <input type="text" name="user_name" />
-        <label>Email</label>
+        <label className="text-white">Email</label>
         <input type="email" name="user_email" />
-        <label>Message</label>
+        <label className="text-white">Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-      </div>
+      
+  {/* </div> */}
+  </div>
+  <div className="row m-3 " id="contact">
+    <div className="">
+      <img
+        src="./assets/contactUs.png"
+        alt="Right Column"
+        style={{ width: '400px', height: 'auto' }}
+        className="img-fluid" // Added class for responsive images
+      />
+    </div>
+  </div>
+</div>
+
     
   );
 };

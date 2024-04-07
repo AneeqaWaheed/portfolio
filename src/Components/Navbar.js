@@ -24,7 +24,7 @@ function Navbar() {
     >
       {/* Left side with logo */}
       <div className="navbar-brand ms-5" style={{ width: '40%', display: 'flex', alignItems: 'center' }}>
-        <img src="./assets/logo.png" alt="Logo" style={{ width: '50px', marginRight: '10px' }} />
+        <img src="./assets/logo.png" alt="Logo" style={{ width: '50px' }} />
         
         <Link className="nav-link fs-3 text-primary" to="/">
         Aneeqa Waheed
@@ -68,12 +68,13 @@ function Navbar() {
 
             </li>
             <li className="nav-item">
-             
-              <Link className="nav-link text-dark" to="/contact">
-              Contact
-                </Link>
               
+            <AnchorLink href="#contact" offset={() => 10} style={{ textDecoration: 'none' }}>
+  <button className="nav-link text-dark">Contact</button>
+</AnchorLink>
+
             </li>
+           
           </ul>
         </div>
       </div>

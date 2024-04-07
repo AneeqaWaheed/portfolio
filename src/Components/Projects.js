@@ -71,7 +71,7 @@ const Projects = () => {
   return (
     <>
     <div className="my-3 p-5 " id='project'>
-        <h2 className="fw-bold text-center mb-5 " style={{ color: 'orange' }}>Trips Packages </h2>
+        <h2 className="fw-bold text-center mb-5 " style={{ color: 'orange' }}>Projects </h2>
         <div className="projects-wrapper ">
           {projects.map((project, index) => (
             <div className="col-md-4" key={project.id}>

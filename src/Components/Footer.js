@@ -1,14 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faGoogle,faGithub  } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   
 
   return (
-    <footer className="text-light p-3"
+    <footer className="text-dark p-3 border-top bg-light"
     style={{
-        backgroundColor: '#0077b5',
+        // backgroundColor: '#0077b5',
     }}>
       <div className="d-flex justify-content-between align-items-center">
         {/* Left side logo and name */}
@@ -23,27 +23,34 @@ const Footer = () => {
         </div>
 
         {/* Right side social media links */}
-        <div className="footer-social mx-4">
-          {/* LinkedIn */}
-          <a
-            href={`https://www.linkedin.com/in/aneeqa-waheed-84571823b/`}
-            target="_blank"
-            className="me-3"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white', fontSize: '24px' }} />
-          </a>
+       
+        <div className='my-4'>
+         
           {/* GitHub */}
           <a
             href={`https://github.com/AneeqaWaheed`}
             target="_blank"
-            className="me-3"
+            
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} style={{ color: 'white', fontSize: '24px' }} />
+            <FontAwesomeIcon icon={faGithub} className='fs-3 mx-3' style={{ color: 'black' }} />
           </a>
+      <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-3 mx-3' style={{ color: 'orange' }}>
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a href={`https://www.linkedin.com/in/aneeqa-waheed-84571823b/`}
+          target="_blank" rel="noopener noreferrer"className='fs-3 mx-3'>
+        <FontAwesomeIcon icon={faLinkedin} style={{ color: '#0077b5' }} />
+      </a>
+      <a href="mailto:aneeqawaheed19@gmail.com" target="_blank" rel="noopener noreferrer" className='fs-3 mx-3'>
+        <FontAwesomeIcon icon={faGoogle} style={{ color: '#d93025' }} />
+      </a>
+      <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className='fs-3 mx-3'>
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
+    </div>
         </div>
-      </div>
+
     </footer>
   );
 };
