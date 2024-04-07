@@ -6,6 +6,7 @@ import Projects from '../Components/Projects';
 import Footer from '../Components/Footer';
 import Technologies from '../Components/Technologies';
 import Proficiency from '../Components/Proficiency';
+import ContactForm from '../Components/Contact';
 function Main() {
   return (
     <div className="landing-page ">
@@ -15,6 +16,7 @@ function Main() {
    <Proficiency />
    <About />
    <Projects />
+   <ContactForm />
    <Footer />
      
     </div>

@@ -71,7 +71,7 @@ const Projects = () => {
   return (
     <>
     <div className="my-3 p-5 " id='project'>
-        <h2 className="fw-bold text-center mb-5">Trips Packages </h2>
+        <h2 className="fw-bold text-center mb-5 " style={{ color: 'orange' }}>Trips Packages </h2>
         <div className="projects-wrapper ">
           {projects.map((project, index) => (
             <div className="col-md-4" key={project.id}>
@@ -83,8 +83,8 @@ const Projects = () => {
                     {truncateDescription(project.description, 15)}
                   </Card.Text>
                   <div className="d-flex flex-lg-row justify-content-between">
-                    <Button variant="outline-dark" style={{
-                        backgroundColor: 'rgba(30, 30, 30, 0.85)',
+                    <Button  style={{
+                        backgroundColor: '#0077b5',
                         color: '#ffffff', 
                     }} onClick={() => handleShowModal(project)}>
                       View Project

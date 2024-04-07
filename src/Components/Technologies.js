@@ -43,15 +43,15 @@ const Technologies = () => {
       </div>
       <div>
       <div className='fw-medium fs-6 text-secondary'>
-        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: '#0077b5' }} />
+        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: 'orange' }} />
         Develop highly interactive Front-end/User Interfaces for your web and mobile applications
       </div>
       <div className='fw-medium fs-6 text-secondary'>
-        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: '#0077b5' }}/>
+        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: 'orange' }}/>
         Do Backend Development by integrating the APIs with frontend code
       </div>
       <div className='fw-medium fs-6 text-secondary'>
-        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: '#0077b5' }} />
+        <FontAwesomeIcon icon={faBolt} className='me-2' style={{ color: 'orange' }} />
         Integration of third-party services such as Firebase
       </div>
     </div>

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="text-light p-3"
     style={{
-        backgroundColor: 'rgba(30, 30, 30, 0.85)',
+        backgroundColor: '#0077b5',
     }}>
       <div className="d-flex justify-content-between align-items-center">
         {/* Left side logo and name */}
