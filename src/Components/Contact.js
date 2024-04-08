@@ -21,6 +21,7 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          alert("Message sent");
         },
         (error) => {
           console.log(error.text);
@@ -31,7 +32,7 @@ const ContactForm = () => {
   return (
    
 
-<div className="vw-100 h-100 d-flex align-items-center justify-content-center mb-5 p-5" id='home'
+<div className="vw-100 h-100 d-flex align-items-center justify-content-center mb-5 p-5" id='contact'
 style={{backgroundColor:'#0854a6'}}
 >
 <div className="row m-3 w-50">
