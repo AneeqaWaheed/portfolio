@@ -61,7 +61,7 @@ const Typewriter = ({ text, delay }) => {
     </div>
 
               <div className='d-flex flex-row me-3'>
-              <a href="/contact" className="btn btn-lg btn-primary mx-3">Contact me</a>
+              <a href="#contact" className="btn btn-lg btn-primary mx-3">Contact me</a>
       <DownlaodPdf />
     </div>
 
